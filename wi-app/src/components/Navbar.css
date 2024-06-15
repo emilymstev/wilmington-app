@@ -45,6 +45,50 @@ nav {
     background:#EF3E42;
 }
 
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: #0061AF;
+    align-items: center;
+}
+
+@media screen and (max-width:769px) {
+    #navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 80px;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0, 0.1);
+        padding: 40px 0 0 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
 img {
     height: 40px;
 }
