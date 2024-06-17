@@ -1,10 +1,30 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
+  background: #ffffff;
 }
 
-body {
-  background: #0061AF;
-  font-family: sans-serif;
+img {
+  display: flex;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  color:purple;
+}
+
+p {
+font-size: 32;
+}
+
+.bob {
+  width: 200px;
 }

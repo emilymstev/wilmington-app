@@ -1,5 +1,4 @@
-import React from "react";
-import { Component } from "react";
+import { React, Component } from "react";
 import "./Navbar.css"
 import logo from "./filler-photos/WIM_logo_color.png";
 
@@ -11,15 +10,16 @@ class Navbar extends Component {
     render () {
         return (
             <nav>
-                <a href="index.html">
-                    <img src={logo} alt={"logo"}></img>
+                <a href="/">
+                    <img id="nav" src={logo} alt={"logo"}></img>
                 </a>
                 <div>
                     <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                        <li><a className="active" href="index.html">Home</a></li>
-                        <li><a href="index.html">Sustainability</a></li>
-                        <li><a href="index.html">FAQ</a></li>
-                        <li><a href="index.html">Contact</a></li>
+                        <li><a className="active" href="/">Home</a></li>
+                        <li><a href="/sustainability">Sustainability</a></li>
+                        <li><a href="/FAQ">FAQ</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/lindsay">Lindsay</a></li>
                     </ul>
                 </div>
                 <div id="mobile" onClick= {this.handleClick}>
