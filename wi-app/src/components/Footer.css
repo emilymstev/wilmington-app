@@ -1,6 +1,11 @@
 .foot {
     background-color: #0061AF;
     padding: 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: #0061AF;
 }
 
 .foot h4 {
@@ -9,49 +14,63 @@
     margin-bottom: 5px;
 }
 
+.foot li {
+    list-style: none;
+    background-color: #0061AF;
+    color: white;
+}
+
 .white-wi {
     background-color: #0061AF;
+    margin: 20px 20px 0px 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-wi img {
+    background-color: #0061AF;
     max-width: 300px;
-    margin: 20px;
 }
 
 .social {
-    margin: 20px;
+    margin: 10px 20px;
     background-color: #0061AF;
+    align-items: center;
 }
 
-.social p {
-    display: inline;
-    margin: 10px;
-    color: #ffffff;
+.social a {
     background-color: #0061AF;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.social .linkedin, .social .phone {
+    margin-right: 15px;
 }
 
 .linkedin img {
     background-color: #0061AF;
-    max-width: 50px;
-    display: inline;
+    max-width: 30px;
     vertical-align: middle;
 }
 
 .hours {
+    display: flex;
+    flex-direction: column;
     background-color: #0061AF;
     margin: 20px;
-}
-
-.hours p {
-    background-color: #0061AF;
-    color: white;
 }
 
 .location {
     background-color: #0061AF;
     margin: 20px;
-}
-
-.location li {
-    list-style: none;
-    background-color: #0061AF;
 }
 
 .google-map {
@@ -62,4 +81,42 @@
 
 .google-map:hover {
     text-decoration: underline;
+}
+
+.copyright {
+    margin: 20px;
+    background-color: #0061AF;
+}
+
+.copyright h6 {
+    color: #ffffff;
+    background-color: #0061AF;
+    margin-top: 5px;
+}
+
+@media (min-width: 922px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "white-wi hours location"
+            "social hours location";
+    }
+
+    .white-wi {
+        grid-area: white-wi;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .social {
+        grid-area: social;
+    }
 }
