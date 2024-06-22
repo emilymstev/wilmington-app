@@ -1,4 +1,65 @@
-.container {
-    padding: 5% 2.5%;
-    background: #0061AF;
+.foot {
+    background-color: #0061AF;
+    padding: 20px;
+}
+
+.foot h4 {
+    color: #ffffff;
+    background-color: #0061AF;
+    margin-bottom: 5px;
+}
+
+.white-wi {
+    background-color: #0061AF;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.social {
+    margin: 20px;
+    background-color: #0061AF;
+}
+
+.social p {
+    display: inline;
+    margin: 10px;
+    color: #ffffff;
+    background-color: #0061AF;
+}
+
+.linkedin img {
+    background-color: #0061AF;
+    max-width: 50px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.hours {
+    background-color: #0061AF;
+    margin: 20px;
+}
+
+.hours p {
+    background-color: #0061AF;
+    color: white;
+}
+
+.location {
+    background-color: #0061AF;
+    margin: 20px;
+}
+
+.location li {
+    list-style: none;
+    background-color: #0061AF;
+}
+
+.google-map {
+    background-color: #0061AF;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.google-map:hover {
+    text-decoration: underline;
 }
