@@ -7,16 +7,18 @@ function Footer() {
     return (
         <div class="foot">
             <div class="content">
-                <div class = "white-wi">
-                    <img src={footLogo} alt={"white wilmington iron logo"}></img>
-                </div>
+                <div class="contact">
+                    <div class = "white-wi">
+                        <img src={footLogo} alt={"white wilmington iron logo"}></img>
+                    </div>
 
-                <div class="social">
-                    <a class="linkedin" href="https://www.linkedin.com/company/wilmington-iron-&-metal-co.-inc" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedInLogo} alt={"LinkedIn logo"}></img>
-                    </a>
-                    <a class="phone" href="tel:6303527340">(###)###-####</a>
-                    <a class = "email" href="malito:emilymstev@gmail.com">email@gmail.com</a>
+                    <div class="social">
+                        <a class="linkedin" href="https://www.linkedin.com/company/wilmington-iron-&-metal-co.-inc" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedInLogo} alt={"LinkedIn logo"}></img>
+                        </a>
+                        <a class="phone" href="tel:6303527340">(###)###-####</a>
+                        <a class="email" href="malito:emilymstev@gmail.com">email@gmail.com</a>
+                    </div>
                 </div>
 
                 <div class="hours">

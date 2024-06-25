@@ -6,6 +6,7 @@
 
 .content {
     background-color: #0061AF;
+    display: grid;
 }
 
 .foot h4 {
@@ -18,6 +19,10 @@
     list-style: none;
     background-color: #0061AF;
     color: white;
+}
+
+.contact {
+    background-color: #0061AF;
 }
 
 .white-wi {
@@ -98,14 +103,13 @@
     .content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-template-areas: 
-            "white-wi hours location"
-            "social hours location";
+            "contact hours location"
     }
 
-    .white-wi {
-        grid-area: white-wi;
+    .contact {
+        grid-area: contact;
     }
 
     .hours {
