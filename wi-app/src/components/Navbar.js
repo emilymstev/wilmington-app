@@ -3,21 +3,13 @@ import "./Navbar.css";
 import logo from "./filler-photos/WIM_logo_color.png";
 
 class Navbar extends Component {
-    state = { 
-        clicked: false,
-        currentPath: "/"
-    };
+    state = { clicked: false };
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
     };
 
-    handleNavClick = (path) => {
-        this.setState({ currentPath: path, clicked: false });
-    };
-
     render() {
-        const { currentPath } = this.state;
 
         return (
             <nav>
@@ -25,41 +17,21 @@ class Navbar extends Component {
                     <img id="nav" src={logo} alt={"logo"}></img>
                 </a>
                 <div>
-                    <ul id="navbar" className={this.state.clicked ? "active" : ""}>
+                    <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
                         <li>
-                            <a 
-                                className={currentPath === "/" ? "active" : ""} 
-                                href="/"
-                                onClick={() => this.handleNavClick("/")}
-                            >Home</a>
+                            <a className="active" href="/">Home</a>
                         </li>
                         <li>
-                            <a 
-                                className={currentPath === "/sustainability" ? "active" : ""}
-                                href="/sustainability"
-                                onClick={() => this.handleNavClick("/sustainability")}
-                            >Sustainability</a>
+                            <a href="/sustainability">Sustainability</a>
                         </li>
                         <li>
-                            <a 
-                                className={currentPath === "/FAQ" ? "active" : ""}
-                                href="/FAQ"
-                                onClick={() => this.handleNavClick("/FAQ")}
-                            >FAQ</a>
+                            <a href="/FAQ">FAQ</a>
                         </li>
                         <li>
-                            <a 
-                                className={currentPath === "/contact" ? "active" : ""}
-                                href="/contact"
-                                onClick={() => this.handleNavClick("/contact")}
-                            >Contact</a>
+                            <a href="/contact">Contact</a>
                         </li>
                         <li>
-                            <a 
-                                className={currentPath === "/lindsay" ? "active" : ""}
-                                href="/lindsay"
-                                onClick={() => this.handleNavClick("/lindsay")}
-                            >Lindsay</a>
+                            <a href="/lindsay">Lindsay</a>
                         </li>
                     </ul>
                 </div>

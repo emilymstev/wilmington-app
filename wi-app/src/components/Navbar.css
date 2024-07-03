@@ -18,7 +18,7 @@ nav {
     position: relative;
 }
 
-#navbar li a {
+#navbar a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
@@ -26,12 +26,12 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
+#navbar a:hover,
+#navbar a.active {
     color: #EF3E42
 }
 
-#navbar li a:hover::after {
+#navbar a:hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -41,7 +41,7 @@ nav {
     left: 20px;
 }
 
-#navbar li a.active::after {
+#navbar a:active::after {
     background:#EF3E42;
 }
 
@@ -60,11 +60,11 @@ nav {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: fixed;
+        position: absolute;
         top: 80px;
         right: -300px;
         width: 250px;
-        height: 100vh;
+        height: 60vh;
         background: #ffffff;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0, 0.1);
         padding: 40px 0 0 20px;
@@ -89,6 +89,6 @@ nav {
     }
 }
 
-#nav{
+#nav {
     height: 7vh;
 }
