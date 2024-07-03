@@ -41,7 +41,7 @@ nav {
     left: 20px;
 }
 
-#navbar a:active::after {
+#navbar a.active::after {
     background:#EF3E42;
 }
 

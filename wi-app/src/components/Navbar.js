@@ -10,6 +10,15 @@ class Navbar extends Component {
     };
 
     render() {
+        const path = window.location.pathname;
+
+        function CustomLink ({ href, children, ...props}) {
+            return (
+                <li>
+                    <a className={path === href ? "active" : ""} href={href} {...props}>{children}</a>
+                </li>
+            )
+        }
 
         return (
             <nav>
@@ -18,21 +27,11 @@ class Navbar extends Component {
                 </a>
                 <div>
                     <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                        <li>
-                            <a className="active" href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/sustainability">Sustainability</a>
-                        </li>
-                        <li>
-                            <a href="/FAQ">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="/contact">Contact</a>
-                        </li>
-                        <li>
-                            <a href="/lindsay">Lindsay</a>
-                        </li>
+                        <CustomLink href="/">Home</CustomLink>
+                        <CustomLink href="/sustainability">Sustainability</CustomLink>
+                        <CustomLink href="/FAQ">FAQ</CustomLink>
+                        <CustomLink href="/contact">Contact</CustomLink>
+                        <CustomLink href="/lindsay">Lindsay</CustomLink>
                     </ul>
                 </div>
                 <div id="mobile" onClick={this.handleClick}>
