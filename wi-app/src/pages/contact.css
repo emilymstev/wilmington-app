@@ -1,0 +1,122 @@
+.image {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    padding: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.alternate {
+    background: #0061AF;
+    padding: 50px 50px 120px 50px;
+    position: relative;
+}
+
+h1 {
+    background: white
+}
+
+.alternate h3 {
+    background-color: #0061AF;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: bold;
+    margin-bottom: 40px;
+    font-size: 1.7em;
+}
+
+h4 {
+    color: #0061AF;
+}
+
+iframe {
+    margin-bottom: 40px;
+}
+
+h6 {
+    color: #0061AF;
+}
+
+.alternate h6 {
+    color: #ffffff;
+    background-color: #0061AF;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+.alternate ul {
+    background-color: #0061AF;
+}
+
+.alternate li {
+    color: #ffffff;
+    background-color: #0061AF;
+    text-align: center;
+    margin-top: 15px;
+}
+
+p {
+    text-align: center;
+}
+
+.alternate p {
+    background-color: #0061AF;
+    color: #ffffff;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    background-color: #0061AF;
+    display: inline-block;
+}
+
+.alternate a {
+    background-color: #0061AF;
+}
+
+.secondary {
+    background-color: #ffffff;
+    color: #0061AF;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 922px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+            "alternate info"
+    }
+
+    .alternate {
+        grid-area: alternate;
+    }
+
+    .info {
+        grid-area: info;
+    }
+}

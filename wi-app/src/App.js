@@ -5,7 +5,8 @@ import Home from "./pages";
 import Sustainability from "./pages/sustainability";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/contact";
-import Lindsay from "./pages/lindsay";
+import About from "./pages/about";
+import Staff from "./pages/staff";
 import './App.css';
 
 function App() {
@@ -23,8 +24,11 @@ function App() {
     case "/contact":
       component = <Contact />
       break
-    case "/lindsay":
-      component = <Lindsay />
+    case "/about":
+      component = <About />
+      break
+    case "/staff":
+      component = <Staff />
       break
   }
   return (

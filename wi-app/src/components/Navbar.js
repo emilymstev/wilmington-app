@@ -31,7 +31,7 @@ class Navbar extends Component {
                         <CustomLink href="/sustainability">Sustainability</CustomLink>
                         <CustomLink href="/FAQ">FAQ</CustomLink>
                         <CustomLink href="/contact">Contact</CustomLink>
-                        <CustomLink href="/lindsay">Lindsay</CustomLink>
+                        <CustomLink href="/about">About Us</CustomLink>
                     </ul>
                 </div>
                 <div id="mobile" onClick={this.handleClick}>

@@ -19,7 +19,10 @@ img {
 h1 {
   font-family: 'Times New Roman';
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 3em;
+  color: #0061AF;
+  text-align: center;
+  margin: 20px;
 }
 
 h4 {
@@ -32,6 +35,14 @@ h6 {
   font-family: 'Times New Roman';
   font-size: 0.8em;
   font-weight: normal;
+}
+
+button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  border-width: 0;
+  font-family: 'Times New Roman';
+  font-size: 1em;
 }
 
 p, li, a {

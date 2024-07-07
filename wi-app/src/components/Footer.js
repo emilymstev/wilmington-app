@@ -17,7 +17,7 @@ function Footer() {
                             <img src={linkedInLogo} alt={"LinkedIn logo"}></img>
                         </a>
                         <a class="phone" href="tel:6303527340">(###)###-####</a>
-                        <a class="email" href="malito:emilymstev@gmail.com">email@gmail.com</a>
+                        <a class="email" href="malito:info@wilmingtoniron.com">info@wilmingtoniron.com</a>
                     </div>
                 </div>
 

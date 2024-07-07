@@ -1,0 +1,13 @@
+.staff-card {
+    margin: 10px;
+    padding: 30px;
+}
+
+h3 {
+    color: #ffffff;
+    background: #0061AF;
+}
+
+p {
+    text-align: left;
+}
