@@ -3,7 +3,7 @@ import "./staff.css";
 
 const Staff = () => {
     return (
-        <div class="body">
+        <div id="container">
             <h1>Our Team</h1>
             <div class="staff-card">
                 <h3>First Last</h3>
