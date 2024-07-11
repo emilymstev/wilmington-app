@@ -27,7 +27,7 @@ const Contact = () => {
                             <p>(###)###-####</p>
                         </li>
                     </ul>
-                    <a href="/staff">
+                    <a href="/about/staff">
                         <button class="secondary">Our Staff</button>
                     </a>
                 </div>

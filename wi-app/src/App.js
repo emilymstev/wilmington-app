@@ -27,7 +27,7 @@ function App() {
     case "/about":
       component = <About />
       break
-    case "/staff":
+    case "/about/staff":
       component = <Staff />
       break
   }

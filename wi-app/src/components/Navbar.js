@@ -3,10 +3,17 @@ import "./Navbar.css";
 import logo from "./filler-photos/WIM_logo_color.png";
 
 class Navbar extends Component {
-    state = { clicked: false };
+    state = { 
+        clicked: false,
+        dropdownOpen: false
+    };
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked });
+    };
+
+    toggleDropdown = () => {
+        this.setState({ dropdownOpen: !this.state.dropdownOpen });
     };
 
     render() {
@@ -31,7 +38,14 @@ class Navbar extends Component {
                         <CustomLink href="/sustainability">Sustainability</CustomLink>
                         <CustomLink href="/FAQ">FAQ</CustomLink>
                         <CustomLink href="/contact">Contact</CustomLink>
-                        <CustomLink href="/about">About Us</CustomLink>
+                        <li className="dropdown">
+                            <CustomLink href="/about">About Us</CustomLink>
+                            <i className="fa fa-caret-down" onClick={this.toggleDropdown}></i>
+                            <div className={this.state.dropdownOpen ? "dropdown-content show" : "dropdown-content"}>
+                                <CustomLink href="/about/staff">Staff</CustomLink>
+                                <CustomLink href="/about/company">Company</CustomLink>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div id="mobile" onClick={this.handleClick}>
