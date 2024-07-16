@@ -1,0 +1,16 @@
+.container {
+    display: block;
+    margin: 0 60px 0 60px;
+}
+
+#faq {
+    margin: 0 40px 0 40px;
+}
+
+.question {
+    margin: 20px 20px 20px 20px;
+}
+
+h6 {
+    text-align: left;
+}

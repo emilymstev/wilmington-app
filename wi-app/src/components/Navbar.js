@@ -12,10 +12,6 @@ class Navbar extends Component {
         this.setState({ clicked: !this.state.clicked });
     };
 
-    toggleDropdown = () => {
-        this.setState({ dropdownOpen: !this.state.dropdownOpen });
-    };
-
     render() {
         const path = window.location.pathname;
 
@@ -35,17 +31,12 @@ class Navbar extends Component {
                 <div>
                     <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
                         <CustomLink href="/">Home</CustomLink>
+                        <CustomLink href="/scrap">Materials</CustomLink>
                         <CustomLink href="/sustainability">Sustainability</CustomLink>
-                        <CustomLink href="/FAQ">FAQ</CustomLink>
                         <CustomLink href="/contact">Contact</CustomLink>
-                        <li className="dropdown">
-                            <CustomLink href="/about">About Us</CustomLink>
-                            <i className="fa fa-caret-down" onClick={this.toggleDropdown}></i>
-                            <div className={this.state.dropdownOpen ? "dropdown-content show" : "dropdown-content"}>
-                                <CustomLink href="/about/staff">Staff</CustomLink>
-                                <CustomLink href="/about/company">Company</CustomLink>
-                            </div>
-                        </li>
+                        <CustomLink href="/about">About Us</CustomLink>
+                        <CustomLink href="/about/staff">Staff</CustomLink>
+                        <CustomLink href="/FAQ">FAQ</CustomLink>
                     </ul>
                 </div>
                 <div id="mobile" onClick={this.handleClick}>

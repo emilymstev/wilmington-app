@@ -1,13 +1,13 @@
 import React from "react";
 
-const Sustainability = () => {
+const Materials = () => {
     return (
         <div class="body">
             <h1>
-                ISO Compliance
+                Materials
             </h1>
         </div>
     );
 };
 
-export default Sustainability;
+export default Materials;

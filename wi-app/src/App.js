@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from "./pages";
+import Materials from "./pages/scrap";
 import Sustainability from "./pages/sustainability";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/contact";
@@ -14,6 +15,9 @@ function App() {
   switch (window.location.pathname) {
     case "/":
       component = <Home />
+      break
+    case "/scrap":
+      component = <Materials />
       break
     case "/sustainability":
       component = <Sustainability />

@@ -1,0 +1,15 @@
+.title {
+    background-color: #0061AF;
+    padding: 40px;
+    margin: 20px 20px 20px 20px;
+}
+
+.title h2 {
+    color: #ffffff;
+    background-color: #0061AF;
+}
+
+.section {
+    margin: 20px;
+    padding: 10px 40px 10px 40px
+}
