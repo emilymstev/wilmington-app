@@ -1,199 +1,97 @@
 .carousel-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    background: #f5f5f5;
+    background: #0061AF;
+    position: relative; /* Ensure relative positioning for absolute arrow positioning */
 }
-  
+
 .carousel-container img {
-width: 100%;
-height: auto;
-display: block;
-background: #f5f5f5;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #0061AF;
+}
+
+/* Ensure arrows are positioned correctly */
+.slick-prev, .slick-next {
+    z-index: 1; /* Ensure arrows appear above images */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for arrows */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #ffffff; /* Arrow color */
+    font-size: 20px; /* Arrow size */
+    z-index: 2; /* Ensure arrows appear above the semi-transparent background */
+}
+
+.slick-prev {
+    left: 10px; /* Adjust left position as needed */
+}
+
+.slick-next {
+    right: 10px; /* Adjust right position as needed */
+}
+
+/* Styling for dots */
+.slick-dots {
+    position: absolute;
+    bottom: 20px; /* Adjust bottom position as needed */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.slick-dots li button:before {
+    color: #0061AF; /* Dot color */
+    background-color: rgba(0, 0, 0, 0); /* Dot background color */
+    opacity: 1;
+    font-size: 10px; /* Dot size */
+    content: "•"; /* Add bullet point if using default Slick dots */
+    padding: 5px; /* Padding around dots */
+    border-radius: 50%; /* Circular dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f5f5f5; /* Active dot color */
+    opacity: 1;
+}
+
+/* General container styles */
+.top {
+    background: #0061AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h6 {
+    text-align: center;
+    color: #ffffff; /* Text color */
+}
+
+/* Primary button styles */
+.primary {
+    background-color: #0061AF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    justify-self: center;
 }
 
 .sustainability {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.sustainability p {
-    text-align: center;
-}
-
-.sustainability a {
-    text-align: center;
-}
-
-.sustainability h6 {
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-#scrap {
-    margin-top: 40px;.carousel-container {
-        width: 90%;
-        margin: 0 auto;
-        background: #f5f5f5;
-    }
-      
-    .carousel-container img {
-        width: 100%;
-        height: auto;
-        display: block;
-        background: #f5f5f5;
-    }
-    
-    #scrap {
-        margin-top: 40px;
-    }
-    
-    button .primary {
-        background-color: #0061AF;
-        color: #ffffff;
-        padding: 10px 20px; /* Add some padding for better appearance */
-        border: none; /* Remove any default borders */
-        cursor: pointer; /* Change cursor to pointer for buttons */
-        justify-self: center;
-    }
-    
-    .top {
-        align-items: center;
-        background: #f5f5f5;
-        display: flex;
-        flex-direction: column;
-        padding: 40px 60px 40px 60px;
-    }
-    
-    .logo {
-        max-width: 90%;
-        margin: 10px 0 40px 0;
-        background: #f5f5f5;
-    }
-    
-    
-    h2 {
-        text-align: center;
-    }
-    
-    /* Customize arrow color */
-    .slick-prev:before, .slick-next:before {
-        color: #0061AF; /* Change arrow color to your preference */
-    }
-    
-    /* Customize dots background */
-    .slick-dots li button:before {
-        font-size: px;
-        color: #0061AF; /* Change dot color to your preference */
-        opacity: 0.75;
-        background-color: #f5f5f5; /* Add background color to dots */
-        padding: 5px; /* Add padding to make the background visible */
-        border-radius: 50%; /* Make the background circular */
-    }
-    
-    .slick-dots li.slick-active button:before {
-        color: #000; /* Change active dot color to your preference */
-        opacity: 1;
-        background-color: #f5f5f5; /* Add background color to active dot */
-    }
-    
-    /* Optional: Add some spacing between the dots */
-    .slick-dots li {
-        margin: 0 5px; /* Adjust spacing between dots */
-        background-color: #f5f5f5;
-    }
-    
-    ul {
-        background-color: #f5f5f5;
-    }
-    
-    .logo {
-        animation: 5s slide-right;
-     }
-     
-    @keyframes slide-right {
-        from {
-            margin-left: -2000px;
-        }
-        to {
-            margin-left: 0%;
-        }
-    }
-    
-}
-
-.primary {
-    background-color: #0061AF;
-    color: #ffffff;
-}
-
-.top {
     align-items: center;
-    background: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 60px 40px 60px;
 }
-
-h6 {
-    text-align: center;
-}
-
-.logo {
-    max-width: 90%;
-    margin: 10px 0 40px 0;
-    background: #f5f5f5;
-}
-
-h2 {
-    text-align: center;
-}
-
-/* Customize arrow color */
-.slick-prev:before, .slick-next:before {
-    color: #0061AF; /* Change arrow color to your preference */
-}
-
-/* Customize dots background */
-.slick-dots li button:before {
-    font-size: px;
-    color: #0061AF; /* Change dot color to your preference */
-    opacity: 0.75;
-    background-color: #f5f5f5; /* Add background color to dots */
-    padding: 5px; /* Add padding to make the background visible */
-    border-radius: 50%; /* Make the background circular */
-}
-
-.slick-dots li.slick-active button:before {
-    color: #000; /* Change active dot color to your preference */
-    opacity: 1;
-    background-color: #f5f5f5; /* Add background color to active dot */
-}
-
-/* Optional: Add some spacing between the dots */
-.slick-dots li {
-    margin: 0 5px; /* Adjust spacing between dots */
-    background-color: #f5f5f5;
-}
-
-ul {
-    background-color: #f5f5f5;
-}
-
-.logo {
-    animation: 5s slide-right;
- }
- 
- @keyframes slide-right {
-     from {
-        margin-left: -2000px;
-     }
- 
-     to {
-        margin-left: 0%;
-     }
-  }

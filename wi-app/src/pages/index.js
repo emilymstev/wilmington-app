@@ -56,7 +56,6 @@ const Home = () => {
     return (
         <div className="body">
             <div class="top">
-                <img class="logo" src = {logo}></img>
                 <div className="carousel-container">
                 <Slider {...settings}>
                     {images.map((image, index) => (
@@ -65,7 +64,15 @@ const Home = () => {
                         </div>
                     ))}
                 </Slider>
-            </div>
+                </div>
+                <div class="alternate" id="scrap">
+                    <h3>YOUR SCRAP METAL RECYCLING SOLUTION.</h3>
+                    <p>Learn what we can do to assist you in your scrap metal recycling. We take a variety of materials.</p>
+                    <br/>
+                    <a href="/scrap">
+                        <button class="secondary">Learn More</button>
+                    </a>
+                </div>
             </div>
             <div class="container">
                 <div class="sustainability">
@@ -74,15 +81,6 @@ const Home = () => {
                     <br/>
                     <a href="/sustainability">
                         <button class="primary">Our ISO Certifications</button>
-                    </a>
-                </div>
-            
-                <div class="alternate" id="scrap">
-                    <h3>YOUR SCRAP METAL RECYCLING SOLUTION.</h3>
-                    <p>Learn what we can do to assist you in your scrap metal recycling. We take a variety of materials.</p>
-                    <br/>
-                    <a href="/scrap">
-                        <button class="secondary">Learn More</button>
                     </a>
                 </div>
             </div>
