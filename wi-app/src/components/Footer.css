@@ -15,6 +15,18 @@
     margin-bottom: 5px;
 }
 
+.hours h6 {
+    color: #ffffff;
+    background-color: #0061AF;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hours ul {
+    margin-top: 15px;
+    background-color: inherit;
+}
+
 .foot li {
     list-style: none;
     background-color: #0061AF;

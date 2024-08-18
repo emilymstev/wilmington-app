@@ -6,6 +6,14 @@ nav {
     padding: 20px 40px;
 }
 
+.fas, .fa-times, .fas, .fa-bars {
+    background-color: inherit;
+}
+
+nav img {
+    background-color: inherit;
+}
+
 #navbar {
     display: flex;
     align-items: center;
@@ -17,6 +25,7 @@ nav {
     list-style: none;
     padding: 0 20px;
     position: relative;
+    background-color: inherit;
 }
 
 #navbar a {

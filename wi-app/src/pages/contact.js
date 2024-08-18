@@ -40,18 +40,21 @@ const Contact = () => {
                     <h6> 2149 S. SOUTH ST, WILMINGTON, OH 45177</h6>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.2566844462176!2d-83.8396377!3d39.4183197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840c6b04d41ccc3%3A0x1af6b79afc39f019!2sWilmington%20Iron%20%26%20Metal%20Co%20Inc!5e0!3m2!1sen!2sus!4v1720368236782!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div id="hours">    
+                <div id="hours">
                     <h4>Hours</h4>
                     <ul>
-                        <li>Monday: 00:00 - 00:00</li>
-                        <li>Tuesday: 00:00 - 00:00</li>
-                        <li>Wednesday: 00:00 - 00:00</li>
-                        <li>Thursday: 00:00 - 00:00</li>
-                        <li>Friday: 00:00 - 00:00</li>
-                        <li>Saturday: CLOSED</li>
-                        <li>Sunday: CLOSED</li>
-                    </ul> 
-                </div>           
+                        <li><h6>RECEIVING HOURS</h6></li>
+                        <li>Monday - Friday: 7:30 - 2:00</li>                    
+                    </ul>
+                    <ul>
+                        <li><h6>INDUSTRIAL HOURS</h6></li>
+                        <li>Monday - Friday: 7:30 - 4:00</li>
+                    </ul>
+                    <ul>
+                        <li>Weekend: CLOSED</li>
+                        <li>Major Holidays: Hours May Vary</li>
+                    </ul>
+                </div>          
             </div>
         </div>
     );

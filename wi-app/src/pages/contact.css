@@ -35,12 +35,6 @@
     padding: 40px;
 }
 
-.alternate {
-    background: #0061AF;
-    padding: 50px 50px 120px 50px;
-    position: relative;
-}
-
 h1 {
     background: white
 }
@@ -71,6 +65,7 @@ iframe {
 
 h6 {
     color: #0061AF;
+    text-align: center;
 }
 
 .alternate h6 {
@@ -121,4 +116,8 @@ p {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#hours ul {
+    margin-bottom: 20px;
 }

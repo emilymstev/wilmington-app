@@ -1,15 +1,52 @@
 .carousel-container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0px;;
+    padding: 0px;
     background: #0061AF;
     position: relative; /* Ensure relative positioning for absolute arrow positioning */
 }
 
-.carousel-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    background-color: #0061AF;
+.carousel-slide {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    width: 100vw;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-caption h2 {
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    animation: fadeIn 2s;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 20%;
+}
+
+.carousel-caption p {
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    animation: fadeIn 2s;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* Ensure arrows are positioned correctly */
@@ -90,7 +127,7 @@ h2, h6 {
     justify-self: center;
 }
 
-.sustainability {
+#sustainability {
     display: flex;
     flex-direction: column;
     align-items: center;

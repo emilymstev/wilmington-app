@@ -1,6 +1,5 @@
 import React from "react";
-import footLogo from "./filler-photos/WIM_logo_white.png";
-import linkedInLogo from "./filler-photos/LI-In-Bug.png";
+import footLogo from "./filler-photos/WIM_logo_white_red.png";
 import "./Footer.css";
 
 function Footer() {
@@ -13,10 +12,7 @@ function Footer() {
                     </div>
 
                     <div class="social">
-                        <a class="linkedin" href="https://www.linkedin.com/company/wilmington-iron-&-metal-co.-inc" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedInLogo} alt={"LinkedIn logo"}></img>
-                        </a>
-                        <a class="phone" href="tel:6303527340">(###)###-####</a>
+                        <a class="phone" href="tel:6303527340">(937) 382-3867</a>
                         <a class="email" href="malito:info@wilmingtoniron.com">info@wilmingtoniron.com</a>
                     </div>
                 </div>
@@ -24,13 +20,16 @@ function Footer() {
                 <div class="hours">
                     <h4>Hours</h4>
                     <ul>
-                        <li>Monday: 00:00 - 00:00</li>
-                        <li>Tuesday: 00:00 - 00:00</li>
-                        <li>Wednesday: 00:00 - 00:00</li>
-                        <li>Thursday: 00:00 - 00:00</li>
-                        <li>Friday: 00:00 - 00:00</li>
-                        <li>Saturday: CLOSED</li>
-                        <li>Sunday: CLOSED</li>
+                        <li><h6>Receiving Hours</h6></li>
+                        <li>Monday - Friday: 7:30 - 2:00</li>                    
+                    </ul>
+                    <ul>
+                        <li><h6>Industrial Hours</h6></li>
+                        <li>Monday - Friday: 7:30 - 4:00</li>
+                    </ul>
+                    <ul>
+                        <li>Weekend: CLOSED</li>
+                        <li>Major Holidays: Hours May Vary</li>
                     </ul>
                 </div>
 
