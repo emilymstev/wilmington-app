@@ -9,7 +9,11 @@
     background-color: #0061AF;
 }
 
-.section {
-    margin: 20px;
-    padding: 10px 40px 10px 40px
+#abouthead {
+    background-image: url("../components/filler-photos/signs.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

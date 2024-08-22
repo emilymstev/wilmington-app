@@ -12,6 +12,7 @@ nav {
 
 nav img {
     background-color: inherit;
+    max-width: 70vw;
 }
 
 #navbar {

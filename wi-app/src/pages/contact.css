@@ -5,26 +5,50 @@
     max-width: 100%;
 }
 
-.centered {
+#contactImg {
+    background-image: url("../components/filler-photos/WI_office.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: 40% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactImg h1 {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    top: 20%;
+    top: 50%;
     left: 50%;
+    color: #ffffff;
     transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0);
+}
+
+#signs {
+    padding-bottom: 50px;
+}
+
+#map {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.phototext h2, .phototext p {
+    color: white;
 }
 
 .container {
     padding: 50px;
 }
 
+#hourssect {
+    padding: 50px;
+    align-items: center;
+}
+
 #facility {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 
 #hours {
@@ -33,6 +57,7 @@
     align-items: center;
     vertical-align: middle;
     padding: 40px;
+    width: 60%
 }
 
 h1 {

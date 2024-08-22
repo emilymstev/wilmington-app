@@ -6,7 +6,7 @@ import "./index.css";
 import img from "../components/filler-photos/WI_truck.JPG";
 import img2 from "../components/filler-photos/conveyor_pile.JPG";
 import img3 from "../components/filler-photos/crane.JPG";
-import img4 from "../components/filler-photos/hydraulic.JPG";
+import img4 from "../components/filler-photos/WI_sign.JPG";
 
 const Home = () => {
     //carousel setup
@@ -47,10 +47,10 @@ const Home = () => {
     };
 
     const slides = [
-        { src: img, title: 'Title for Image 1', description: 'Description for Image 1' },
+        { src: img, title: 'Family-Owned and Operated Since 1923', description: 'We are here to focus on customer-relationships and personalized solutions', href: "/about", btntext: "About Us" },
         { src: img2, title: 'Title for Image 2', description: 'Description for Image 2' },
         { src: img3, title: 'Title for Image 3', description: 'Description for Image 3' },
-        { src: img4, title: 'Title for Image 4', description: 'Description for Image 4' },
+        { src: img4, title: 'Visit the facility', description: 'Learn how we can meet your scrap metal recycling needs.', href: "/contact", btntext: "Learn More"},
     ];
 
     return (
@@ -62,8 +62,13 @@ const Home = () => {
                         <div key={index} className="carousel-slide">
                             <img src={slide.src} alt={`Slide ${index + 1}`} />
                             <div className="carousel-caption">
-                                <h2>{slide.title}</h2>
-                                <p>{slide.description}</p>
+                                <div class="box">
+                                    <h3>{slide.title}</h3>
+                                    <p>{slide.description}</p>
+                                    <a href={slide.href}>
+                                        <button class="primary">{slide.btntext}</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}
