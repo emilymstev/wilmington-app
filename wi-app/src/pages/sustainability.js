@@ -58,9 +58,8 @@ const Sustainability = () => {
                                     </span>
                                 </div>
                                 {activeQuestions.includes(index) && (
-                                    <div className="answer-container">
-                                        <iframe class="pdf" id="answer" src={cert.certificate}></iframe>
-                                        <a href={cert.certificate} target="_blank" rel="noopener noreferrer" className="pdf-overlay"></a>
+                                    <div className="certificate-container">
+                                        <iframe class="pdf" id="certificate" src={cert.certificate}></iframe>
                                     </div>
                                 )}
                             </div>
