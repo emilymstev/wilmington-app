@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
+import Carousel from "../components/carousel";
 import img from "../components/filler-photos/WI_truck.JPG";
 import img2 from "../components/filler-photos/conveyor_pile.JPG";
 import img3 from "../components/filler-photos/crane.JPG";
@@ -55,6 +56,7 @@ const Home = () => {
 
     return (
         <div class="body">
+            <Carousel />
             <div class="section" id="carousel">
                 <div className="carousel-container">
                 <Slider {...settings}>

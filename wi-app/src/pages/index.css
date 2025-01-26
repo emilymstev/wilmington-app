@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     background: #0061AF;
-    position: relative; /* Ensure relative positioning for absolute arrow positioning */
+    position: relative;
 }
 
 .carousel-slide {
@@ -52,7 +52,6 @@
     margin-top: 20px;
 }
 
-/* Ensure arrows are positioned correctly */
 .slick-prev, .slick-next {
     z-index: 1; /* Ensure arrows appear above images */
     width: 50px; /* Adjust width as needed */

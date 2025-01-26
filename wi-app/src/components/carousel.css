@@ -1,0 +1,29 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-image-container {
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: opacity 0.5s ease-in-out;
+}
