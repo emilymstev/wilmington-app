@@ -38,7 +38,7 @@ nav img {
 
 #navbar a:hover,
 #navbar a.active {
-    color: #EF3E42
+    color: #EF3E42;
 }
 
 #navbar a.active::after {
