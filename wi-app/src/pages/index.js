@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <div class="body">
-            <Carousel />
+         
             <div class="section" id="carousel">
                 <Carousel />
             </div>
